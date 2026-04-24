@@ -1,0 +1,12 @@
+# 开发文件
+node_modules/
+*.log
+.DS_Store
+
+# 临时文件
+*.tmp
+*.backup*
+
+# 调试文件
+debug-logger.js
+storage-inspector.js

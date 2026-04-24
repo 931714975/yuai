@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "禹AI画布",
+  "version": "1.1.1",
+  "description": "禹AI画布，包含多账号管理和AI生图画布功能。",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "unlimitedStorage",
+    "cookies",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "sidePanel",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "action": {
+    "default_title": "打开禹AI助手",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*.svg",
+        "*.png",
+        "*.jpg",
+        "*.jpeg"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
